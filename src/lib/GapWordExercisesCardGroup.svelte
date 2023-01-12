@@ -102,7 +102,8 @@
     formdata.append('question_info', "'u1/q1'");
     formdata.append('no_mc', '1');
 
-    const corsUrl = 'https://escape-day13-cors.herokuapp.com/';
+    // const corsUrl = 'https://escape-day13-cors.herokuapp.com/';
+    const corsUrl = 'https://web-production-f84d.up.railway.app/';
 
     const response = await fetch(
       `${corsUrl}https://api.speechace.co/api/scoring/text/v9/json?dialect=en-us&user_id=XYZ-ABC-99001&key=${

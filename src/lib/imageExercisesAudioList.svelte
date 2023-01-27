@@ -26,7 +26,7 @@
   <div class="library mb-3">
     <span class="title">{title}</span>
     <audio controls src={audio} />
-    <button class="trash" on:click={() => dispatch('deleterecording')}>
+    <button class="trash" on:click={() => dispatch('deleteRecording')}>
       <Icon name="trash-fill" />
     </button>
   </div>

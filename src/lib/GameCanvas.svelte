@@ -6,6 +6,7 @@
   export let mediaRecorder;
   export let recordAudioButtons;
   export let isLoading;
+  export let testId;
 
   let player;
 
@@ -46,7 +47,7 @@
       scale: 1,
       debug: true,
       background: [0, 0, 1, 1],
-      root: document.querySelector('#mygame'),
+      root: document.querySelector(`#mygame${testId}`),
     });
 
     // Speeds
@@ -330,4 +331,4 @@
   });
 </script>
 
-<div id="mygame" />
+<div id={`mygame${testId}`} />

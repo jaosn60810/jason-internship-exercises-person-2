@@ -93,6 +93,10 @@
       (i) => i.audio !== recording.audio
     );
 
+    currentTest.answerWordsArray.push(
+      recording.pronunciationAssessmentResult['text_score']['text']
+    );
+
     $imageExercisesStore = $imageExercisesStore.map((test) => {
       if (test.id === testId) {
         return currentTest;
@@ -209,6 +213,7 @@
       {mediaRecorder}
       recordAudioButtons={recordAudioButtonsRef}
       {isLoading}
+      testId={test.id}
     />
 
     <CardBody class="h1"

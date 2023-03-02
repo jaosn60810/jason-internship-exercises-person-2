@@ -15,6 +15,7 @@
 
   import AudioList from './AudioList.svelte';
   import RecordAudioButtons from './RecordAudioButtons.svelte';
+  import { corsUrl } from '../utilities/Constant';
 
   const constrains = { audio: true };
   let mediaRecorder = null;
@@ -103,7 +104,6 @@
     formdata.append('no_mc', '1');
 
     // const corsUrl = 'https://escape-day13-cors.herokuapp.com/';
-    const corsUrl = 'https://web-production-f84d.up.railway.app/';
 
     const response = await fetch(
       `${corsUrl}https://api.speechace.co/api/scoring/text/v9/json?dialect=en-us&user_id=XYZ-ABC-99001&key=${

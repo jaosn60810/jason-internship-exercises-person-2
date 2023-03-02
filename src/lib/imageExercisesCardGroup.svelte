@@ -1,7 +1,7 @@
 <script>
   import imageExercisesStore from '../stores/ImageExercisesStore';
 
-  import { EXERCISE_TYPES } from '../utilities/Constant';
+  import { corsUrl, EXERCISE_TYPES } from '../utilities/Constant';
 
   import {
     Card,
@@ -117,7 +117,6 @@
 
     //     const corsUrl = 'https://escape-day13-cors.herokuapp.com/';
     // const corsUrl = 'https://cors-anywhere.herokuapp.com/';
-    const corsUrl = 'https://web-production-f84d.up.railway.app/';
 
     const response = await fetch(
       `${corsUrl}https://api.speechace.co/api/scoring/text/v9/json?key=${

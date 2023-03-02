@@ -10,3 +10,5 @@ export const EXERCISE_TYPES = {
     PASSING_SCORE: 80,
   },
 };
+
+export const corsUrl = 'https://web-production-a633.up.railway.app/';
